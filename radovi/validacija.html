@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="validacija.css">
+    
+    <title>Validacija</title>
+</head>
+<body>
+    <div class="wrapper">
+        
+        <br>
+        <div class="forma">
+        <form id="forma1" action="neka_stranica.asp">
+        <h1><a href="#" title="Ponisti formu" id="clear">Registracija</a></h1>
+        <label >Korisnicko ime</label></br>
+        <input type="text" id="username" placeholder="Korisnicko ime"><p id="p1"></p></br></br>
+        <label >Email</label></br>
+        <input type="email" id="email" placeholder="Email"><p id="p2"></p></br></br>
+        <label >Lozinka</label></br>
+        <input type="password" id="lozinka" ><p id="p3"></p></br></br>
+        <label >Potvrda lozinke</label></br>
+        <input type="password" id="lozinka2"><p id="p4"></p></br></br>
+        <label >Strucna sprema</label></br>
+        <select name="nivoskole" id="nivoskole">
+            <option value="none"></option>
+            <option value="nivo1">SSS</option>
+            <option value="nivo2">VŠS</option>
+            <option value="nivo3">VSS</option>
+        </select>
+        <br>
+        <br>
+        <input type="submit" value="Sacuvaj" id="potvrdi" onclick="return validateForm()" >
+    </form>
+        </div>
+    </div>
+    <script src="validacija.js"></script>
+</body>
+</html>

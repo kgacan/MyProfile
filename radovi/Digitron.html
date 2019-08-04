@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Digitron</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    
+    <script src="digitron.js"></script>
+    <style>
+        h1{
+            color: grey;
+        }
+        .wrapper tr td{
+            padding: 8px 12px;
+            background-color: grey;
+            text-align: center;
+        }
+        .operacija{
+            background-color: lightgrey !important;
+            border: 1px solid grey;
+        }
+        .wrapper{
+            margin: 40px auto;
+            width: 400px;
+            text-align: center;
+            background-color: lightblue;
+            padding: 15px;
+            border: 1px solid grey;
+        }
+        table{
+            margin: 0 auto;
+        }
+        #display{
+            margin: 0 auto;
+            width: 60%;
+            height: 40px;
+            background-color: white;
+            text-align: left;
+            border: 1px solid grey;
+        }
+        .wrapper p{
+            text-align: right;
+            color: grey;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+    <h1>Digitron</h1>
+    <div id="display" name="display"></div>
+    <table>
+    <tr>
+        <td id="sedam" onclick="izracunajUkupno(7)">7</td>
+        <td id="osam" onclick="izracunajUkupno(8)">8</td>
+        <td id="devet" onclick="izracunajUkupno(9)">9</td>
+        <td class="operacija" onclick="izbrisi()">DEL</td>
+    </tr>
+    <br>
+    <tr>
+        <td id="cetiri" onclick="izracunajUkupno(4)">4</td>
+        <td id="pet" onclick="izracunajUkupno(5)">5</td>
+        <td id="sest" onclick="izracunajUkupno(6)">6</td>
+        <td class="operacija" id="podijeljeno" onclick="izracunajUkupno('/')">/</td>
+    </tr>
+    <br>
+    <tr>
+        <td id="jedan" onclick="izracunajUkupno(1)" >1</td>
+        <td id="dva" onclick="izracunajUkupno(2)">2</td>
+        <td id="tri" onclick="izracunajUkupno(3)" >3</td>
+         <td class="operacija" id="puta" onclick="izracunajUkupno('*')">X</td>
+    </tr>
+    <br>
+    <tr>
+            <td class="operacija" id="tacka" onclick="izracunajUkupno('.')">.</td>
+            <td id="nula" onclick="izracunajUkupno(0)">0</td>
+            <td class="operacija" id="plus" onclick="izracunajUkupno('+')">+</td>
+             <td class="operacija" id="minus" onclick="izracunajUkupno('-')">-</td>
+             <td class="operacija" id="jednako" onclick="izracunaj()">=</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+        <p>Kemal Gačan</p>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
