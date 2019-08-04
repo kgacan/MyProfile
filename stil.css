@@ -1,0 +1,217 @@
+
+@keyframes nekaAnimacija{
+    0%{ background-color: rgb(247, 247, 248); left: 40%; top: 20%; transform:rotate(0deg);}
+    25%{ background-color: rgb(32, 40, 45); left: 70%; top: 20%; transform:rotate(25deg);}
+    50%{ background-color: lightblue; left: 70%; top: 50%; transform:rotate(50deg);}
+    75%{ background-color: rgb(32, 40, 45); left: 40%; top: 50%; transform:rotate(75deg);}
+    100%{ background-color: rgb(247, 247, 248); left: 40%; top: 20%; transform:rotate(100deg);}
+}
+
+body{
+    background-color: lightgray;
+    font-family: 'Courier New', Courier, monospace;
+}
+.sadrzaj{
+    position: absolute;
+    background-color: blanchedalmond;
+    width: 80%;
+    height: 100%;
+    top: 0;
+    left: 10%;
+    border-left: 1px solid rgb(32, 40, 45);
+    border-right: 1px solid rgb(32, 40, 45);
+}
+.gornji{
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    top: 0;
+    left: 0;
+    background-color: rgb(32, 40, 45);
+    color: white;
+}
+.obicni{
+    display: none;
+    /*position: absolute;
+    background-color: rgb(247, 247, 248);
+    width: 100%;
+    height: 64%;
+    top: 30%;
+    left: 0;
+    */
+}
+.trenutni{
+        position: absolute;
+        border-top: 5px solid lightblue;
+        background-color: rgb(247, 247, 248);
+        width: 100%;
+        height: 64%;
+        top: 30%;
+        left: 0;
+        overflow:auto;
+    }
+
+.dno{
+    position: absolute;
+    border-top: 5px solid lightblue;
+    background-color: rgb(32, 40, 45);
+    width: 100%;
+    height: 6%;
+    bottom: 0px;
+    left: 0px;
+    text-align: center;
+}
+.dno #textdisplay{
+    margin-top: 10px;
+    width: 30%;
+    border: 1px solid white;
+}
+.naslov{
+    position: absolute;
+    width: 66%;
+    right: 5px;
+    bottom: 22%;
+}
+.logo{
+    position: absolute;
+    background-color: rgb(32, 40, 45);
+    border: 5px solid lightblue;
+    top: 35%;
+    left: 5%;
+    width: 20%;
+    height: 100%;
+    z-index: 99;
+    text-align: center;
+}
+.logo img{
+    width:75%;
+    height:100%;
+    
+}
+.navigacija{
+    position: absolute;
+    width: 71%;
+    height: 20%;
+    bottom: 4px;
+    right: 5px;
+}
+.sadrzaj li, .sadrzaj li a{ /*tranzicija*/
+    transition: all 1s;
+}
+ul li{
+    display: inline;
+    padding: 7px 26px;
+    margin: 0 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+ul>li:hover{
+    background-color: lightblue;
+    
+}
+#podmeni{
+    display: none;
+    position: absolute;
+    right: 40.2%;
+    max-width: 160px;
+    top: 105%;
+    background-color: rgb(32, 40, 45);
+    z-index: 99;
+    border-left: 1px solid rgb(32, 40, 45);
+    border-right: 1px solid rgb(32, 40, 45);
+    border-bottom: 1px solid rgb(32, 40, 45);
+}
+#podmeni a:nth-child(odd){
+    
+}
+
+#podmeni a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    border-bottom: rgb(32, 40, 45);
+    padding: 7px 26px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+ul li:hover>#podmeni{
+    display: block;
+}
+ul a:hover{
+    background-color: lightblue;
+}
+.on{
+    color: lightseagreen;
+}
+#licni{
+    position: absolute;
+    width: 30%;
+    height: 75%;
+    top: 10%;
+    left: 30%;
+}
+#kontakt{
+    position: absolute;
+    width: 30%;
+    height: 75%;
+    top: 10%;
+    left: 63%;
+}
+#animacija{
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    width: 20%;
+    height: 42%;
+    text-align: center;
+    animation-name: nekaAnimacija;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-timing-function: cubic-bezier(1, 0, 0, 1);
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    transform:rotate(360deg);
+}
+#animacija img{
+    margin-top: 50px;
+}
+#misljenje{
+    position: absolute;
+    left: 30%;
+    top: 10%;
+    width: 30%;
+    height: 75%;
+}
+#misljenje .licni{
+    width: 300px;
+}
+#misljenje form{
+    margin-left: 10px;
+}
+#procitaj{
+    position: absolute;
+    right: 2%;
+    top: 10%;
+    width: 30%;
+    height: 75%;
+}
+#galerija-naslov{
+    text-align: center;
+}
+#tekst{
+    padding: 20px;
+    width: 800px;
+    font-style: italic;
+    text-align: justify;
+    margin: 100px auto;
+}
+table thead td{
+    background-color: rgb(32, 40, 45);
+    color: white;
+}
+table tr{
+    background-color: lightblue;
+}
+
